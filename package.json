@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "ModelIt K12 Educational Platform",
   "main": "index.js",
-  "homepage": "https://Charlesmartinedd.github.io/modelitk12",
+  "homepage": "https://alexandria-s-design.github.io/modelitk12-webpage",
   "scripts": {
     "build": "webpack --config webpack.config.js --mode production",
     "build:dev": "webpack --config webpack.config.js --mode development",

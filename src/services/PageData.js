@@ -145,19 +145,14 @@ export const pageData = {
 			title: 'Resources',
 			list: [
 				{
-					id: 11,
-					title: 'Blog',
-					link: 'https://modelitk12.substack.com/'
-				},
-				{
 					id: 12,
 					title: 'Publications',
 					link: '/publications'
 				},
 				{
-					id: 13,
-					title: 'Case Studies',
-					link: 'https://'
+					id: 11,
+					title: 'Blog',
+					link: 'https://modelitk12.substack.com/'
 				}
 			]
 		},
@@ -239,6 +234,12 @@ export const pageData = {
 			id: 5,
 			title: 'Invest in Your Growth with Professional Development',
 			content: 'Unlock your full potential as an educator with our professional development opportunities. From workshops and conferences to online courses and certifications, we provide a wide range of options to help you stay up-to-date on the latest educational trends, improve your teaching skills, and further your understanding of biology and the Cell Collective platform.'
+		},
+		{
+			id: 6,
+			title: 'Solve the Mystery of Boolean Modeling',
+			content: 'Join Dr. Maya in an exciting choose-your-own-adventure journey! ModelIt Mystery teaches the 10 fundamentals of biological modeling through an engaging interactive story. With stunning visuals, professional narration, and challenging boss levels, students learn while having fun. Complete the adventure in just 10-15 minutes!',
+			link: 'https://alexandria-s-design.github.io/modelit-mystery/'
 		}
 	],
 

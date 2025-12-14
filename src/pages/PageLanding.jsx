@@ -1,7 +1,45 @@
 import React from "react";
 import "./PageLanding.css";
+import Modal from "../components/Modal";
 
 export default function PageLanding() {
+	const [showBlogModal, setShowBlogModal] = React.useState(false);
+
+	const blogModalContent = (
+		<div style={{ textAlign: 'center', padding: '20px 0' }}>
+			<i className="fa-solid fa-seedling" style={{
+				fontSize: '3em',
+				color: '#0F6ACE',
+				marginBottom: '20px',
+				display: 'block'
+			}}></i>
+			<h3 style={{
+				color: '#0F6ACE',
+				fontSize: '1.8em',
+				marginBottom: '15px',
+				marginTop: '0'
+			}}>Growing Something Great</h3>
+			<p style={{
+				color: '#555',
+				fontSize: '1.1em',
+				lineHeight: '1.6',
+				maxWidth: '400px',
+				margin: '0 auto 20px'
+			}}>
+				Our blog is taking root! Soon you'll find insights on systems thinking,
+				classroom success stories, and teaching resources.
+			</p>
+			<p style={{
+				color: '#888',
+				fontSize: '0.95em',
+				fontStyle: 'italic',
+				marginBottom: '0'
+			}}>
+				Check back soon!
+			</p>
+		</div>
+	);
+
 	return <React.Fragment>
 		{/* Hero Section */}
 		<section className="landing-hero color-bg-blue-0015">
@@ -57,12 +95,6 @@ export default function PageLanding() {
 							<i className="fas fa-arrow-right"></i>
 						</a>
 					</div>
-					<div className="cta-badge">
-						<div className="badge-content">
-							<i className="fas fa-microscope"></i>
-							<span>Research-Grade Platform</span>
-						</div>
-					</div>
 				</div>
 			</div>
 		</section>
@@ -111,31 +143,37 @@ export default function PageLanding() {
 			</div>
 		</section>
 
-		{/* Newsletter/Blog CTA */}
+		{/* Blog CTA */}
 		<section className="landing-newsletter color-bg-blue-0015">
 			<div className="container">
 				<div className="newsletter-content">
 					<div className="newsletter-icon animate-pulse-01">
-						<i className="fas fa-envelope-open-text"></i>
+						<i className="fas fa-blog"></i>
 					</div>
 					<h2 className="color-font-blue-0050">Join Us on This Journey</h2>
 					<p className="color-font-blue-0030">
 						Be the first to know about ModelIt K12's progress, educational insights,
 						and the latest in computational modeling for K-12 education. Subscribe to
-						our newsletter for updates, teaching resources, and inspiring stories from
+						our blog for updates, teaching resources, and inspiring stories from
 						the intersection of science and technology.
 					</p>
-					<a
-						href="https://charlesmartinedd.github.io/modelitk12-newsletter/2025/11/01/welcome-to-modelit-k12.html"
-						target="_blank"
-						rel="noopener noreferrer"
+					<button
+						onClick={() => setShowBlogModal(true)}
 						className="newsletter-button"
 					>
-						Subscribe to Our Newsletter
+						Subscribe to Our Blog
 						<i className="fas fa-paper-plane"></i>
-					</a>
+					</button>
 				</div>
 			</div>
 		</section>
+
+		<Modal
+			isOpen={showBlogModal}
+			onClose={() => setShowBlogModal(false)}
+			title="Blog"
+		>
+			{blogModalContent}
+		</Modal>
 	</React.Fragment>
 }

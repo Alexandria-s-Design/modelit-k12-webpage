@@ -28,6 +28,40 @@ export default function FooterSection() {
 	}
 
 	const policyContent = {
+		'Blog': (
+			<div style={{ textAlign: 'center', padding: '20px 0' }}>
+				<i className="fa-solid fa-seedling" style={{
+					fontSize: '3em',
+					color: '#0F6ACE',
+					marginBottom: '20px',
+					display: 'block'
+				}}></i>
+				<h3 style={{
+					color: '#0F6ACE',
+					fontSize: '1.8em',
+					marginBottom: '15px',
+					marginTop: '0'
+				}}>Growing Something Great</h3>
+				<p style={{
+					color: '#555',
+					fontSize: '1.1em',
+					lineHeight: '1.6',
+					maxWidth: '400px',
+					margin: '0 auto 20px'
+				}}>
+					Our blog is taking root! Soon you'll find insights on
+					systems thinking, classroom success stories, and teaching resources.
+				</p>
+				<p style={{
+					color: '#888',
+					fontSize: '0.95em',
+					fontStyle: 'italic',
+					marginBottom: '0'
+				}}>
+					Check back soon!
+				</p>
+			</div>
+		),
 		'Terms of Use': (
 			<>
 				<p>ModelIt! provides educational tools and materials for K-12 classrooms. By using our site, you agree to use all resources responsibly and only for learning or teaching purposes.</p>

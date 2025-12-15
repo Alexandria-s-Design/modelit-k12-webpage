@@ -43,7 +43,7 @@ export default function Header () {
 					{/* <li className={menuActive.pricing ? 'actived': ''}><Link to="/pricing" onClick={handleToggleActive.bind(this, 'pricing')}>Pricing</Link><div className="active-bar"></div></li> */}
 					<li className={menuActive.learninghub ? 'actived': ''}><Link to="/learning-hub" onClick={handleToggleActive.bind(this, 'learninghub')}>Learning Hub</Link><div className="active-bar"></div></li>
 					<li className={menuActive.teacherspayteachers ? 'actived': ''}><Link to="/teachers-pay-teachers" onClick={handleToggleActive.bind(this, 'teacherspayteachers')}>Teachers Pay Teachers</Link><div className="active-bar"></div></li>
-					<li className={menuActive.comingSoon ? 'actived': ''}><Link to="/coming-soon" onClick={handleToggleActive.bind(this, 'comingSoon')}>Coming Soon</Link><div className="active-bar"></div></li>
+					<li className={menuActive.comingSoon ? 'actived': ''}><Link to="/coming-soon" onClick={handleToggleActive.bind(this, 'comingSoon')}>Future</Link><div className="active-bar"></div></li>
 					{/* <li className={menuActive.requestdemo ? 'actived': ''}><Link to="/request-demo" onClick={handleToggleActive.bind(this, 'requestdemo')}>Request Demo</Link><div className="active-bar"></div></li> */}
 				</ul>
 			</nav>

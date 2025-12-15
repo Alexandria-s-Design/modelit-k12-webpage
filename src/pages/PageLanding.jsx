@@ -18,7 +18,7 @@ export default function PageLanding() {
 				fontSize: '1.8em',
 				marginBottom: '15px',
 				marginTop: '0'
-			}}>Growing Something Great</h3>
+			}}>The Future is Growing</h3>
 			<p style={{
 				color: '#555',
 				fontSize: '1.1em',
@@ -26,7 +26,7 @@ export default function PageLanding() {
 				maxWidth: '400px',
 				margin: '0 auto 20px'
 			}}>
-				Our blog is taking root! Soon you'll find insights on systems thinking,
+				Our blog is on the horizon! Soon you'll discover insights on systems thinking,
 				classroom success stories, and teaching resources.
 			</p>
 			<p style={{
@@ -35,7 +35,7 @@ export default function PageLanding() {
 				fontStyle: 'italic',
 				marginBottom: '0'
 			}}>
-				Check back soon!
+				Coming in the future!
 			</p>
 		</div>
 	);
